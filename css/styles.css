@@ -18,36 +18,37 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .col-1 {
   grid-column: 1 / span 1;
-  /* border: 1px solid red; */
+}
+
+.col-1 * {
+  margin-left: auto;
 }
 
 .col-2 {
   grid-column: 2 / span 2;
   margin-left: 20px;
-  /* border: 1px solid red; */
 }
 
 .flex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
 }
 
-.align-right {
-  margin-left: auto;
+.vertical-center {
+  justify-content: center;
 }
 
 #portrait {
   width: 80%;
   border-radius: 50%;
+  filter: grayscale(100%);
 }
 
-#info {
+#personal-info {
   margin-top: 20px;
 }
