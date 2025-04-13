@@ -110,6 +110,21 @@ a.nav {
   color: white
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 20px;
+  padding: 16px 16px;
+  background-color: black;
+  color: white;
+}
+
+i {
+  color: white;
+}
+
 ul {
   padding-left: 16px;
 }
