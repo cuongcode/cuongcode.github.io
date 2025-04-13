@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-master {
+  max-width: 840px; /*A4 96PPI 794x1123*/
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-left-style: solid;
+  border-left-width: 3px;
+  padding-left: 28px;
+}
+
+.ability {
+  gap: 40px
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#portrait {
+  width: 100%;
+  height: 100%;
+}
+
+.gap-3 {
+  gap: 36px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.text-label {
+  font-size: 20px;
+  font-weight: bold
+}
+
+.text-para {
+  font-size: 16px;
+  font-weight: 300
+}
+
+.text-semi-label {
+  font-weight: 600
+}
+
+ul {
+  /* margin-left: 20px; */
+  padding-left: 16px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+@media only screen and (min-width: 750px) {
+  #portrait {
+    border-radius: 50%;
+  }
+  .profile {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    padding-left: 31px;
+  }
+  .name {
+    font-size: 44px;
+  }
+  .role {
+    font-size: 32px;
+  }
+  .ability {
+    gap: 100px
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .ability {
+    flex-direction: column;
+    gap: 0
+  }
+  .name {
+    font-size: 24px;
+  }
+  .role {
+    font-size: 18px;
+  }
+}
