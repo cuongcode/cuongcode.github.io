@@ -17,6 +17,11 @@ a:hover {
   color: gray;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container-master {
   max-width: 840px; /*A4 96PPI 794x1123*/
   margin-left: auto;
@@ -129,6 +134,31 @@ ul {
   padding-left: 16px;
 }
 
+.container-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 840px; /*A4 96PPI 794x1123*/
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.port-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
 @media only screen and (min-width: 750px) {
   #portrait {
     border-radius: 50%;
@@ -148,6 +178,12 @@ ul {
   }
   .ability {
     gap: 100px
+  }
+  .portfolio {
+    flex-direction: row;
+  }
+  .container-portfolio {
+    max-width: 100%;
   }
 }
 
